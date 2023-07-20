@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HackerOne</title>
     <link rel="stylesheet" href="hackerone.css">
-    <script src="hackerone.js"></script>
     <link rel="Icon" href="images/hackerone.svg">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -119,40 +118,47 @@
     <h1>QUESTIONS  WE HAVE ANSWER?</h1>
     <h4>How else can we help? Let us know and we’ll get in touch.</h4>
   <div class="foampart">
-    <form>
-      <div class="form-row" id="signup-form">
+    <form id="signup" method="">
+      <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4"  class="foamtext">Firstname</label>
-          <input name="fname"type="text" class="form-control" id="inputEmail4">
+          <input type="text" class="form-control" id="fname">
+          <div id="fname-error"></div>
         </div>
         <div class="form-group col-md-6 ">
           <label for="inputPassword4"  class="foamtext">Lastname</label>
-          <input name="lname"type="text" class="form-control border-0" id="inputPassword4">
+          <input type="text" class="form-control border-0" id="lname">
+          <div id="lname-error"></div>
         </div>
       </div>
       <div class="form-row ">
         <div class="form-group col-md-6">
           <label for="inputEmail4" class="foamtext" >Bussines email</label>
-          <input type="email" class="form-control" id="inputEmail4" >
+          <input type="text" class="form-control" id="bemail" >
+          <div id="bemail-error"></div>
         </div>
         <div class="form-group col-md-6 ">
           <label for="inputPassword4" class="foamtext" >Comapny</label>
-          <input type="password" class="form-control border-0" id="inputPassword4">
+          <input type="text" class="form-control border-0" id="company">
+          <div id="company-error"></div>
         </div>
       </div>
       <div class="form-row ">
         <div class="form-group col-md-6">
           <label for="inputEmail4"  class="foamtext">Job title</label>
-          <input type="email" class="form-control" id="inputEmail4" >
+          <input type="text" class="form-control" id="job" >
+          <div id="job-error"></div>
         </div>
         <div class="form-group col-md-6 ">
           <label for="inputPassword4"  class="foamtext"> security objective</label>
-          <input type="password" class="form-control border-0" id="inputPassword4">
+          <input type="text" class="form-control border-0" id="so">
+          <div id="so-error"></div>
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress"  class="foamtext">country</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="select..">
+        <input type="text" class="form-control" id="country" placeholder="select..">
+        <div id="country-error"></div>
       </div>
       <br>
       <button type="submit" class="btn btn-primary pl-10">Submit</button>
@@ -316,8 +322,8 @@
 </body>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>    
+    <script src="hackerone.js"></script>
   </body>
 </html>

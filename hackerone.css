@@ -202,7 +202,7 @@ grid-column: 8/-2;
 }
 .last{
     padding-top:100px;
-    grid-column: 2/-1;
+    grid-column: 1/-1;
     padding-left: -10px;
     display: flex;
     justify-content: space-evenly;
@@ -211,7 +211,7 @@ grid-column: 8/-2;
     .last{
         flex-direction: column;
         justify-content: center;
-        grid-column: 5/ -1;
+        grid-column: 3/ -1;
     }
 }
 .edit{
@@ -240,7 +240,7 @@ grid-column: 8/-2;
     .icons {
         flex-direction: column;
         justify-content: center;
-        grid-column: 5/ -1;
+        grid-column: 3/ -1;
     }
 }
 .bxl-facebook{
@@ -265,6 +265,6 @@ font-size:20px;
     .lastwork {
         flex-direction: column;
         justify-content: center;
-        grid-column: 5/ -1;
+        grid-column: 3/ -1;
     }
 }
